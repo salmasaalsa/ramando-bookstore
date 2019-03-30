@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class Bukutamu extends Migration
+class Whishlist extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,12 @@ class Bukutamu extends Migration
      */
     public function up()
     {
-        Schema::create('bukutamu', function (Blueprint $table) {
-            $table->increments('id');
-            $table->string('nama',50)->index();
-            $table->text('alamat');
-            $table->string('email',50);
-            $table->string('jeniskelamin',50);
-            $table->timestamp('email_verified_at')->nullable();
+        Schema::create('whishlist', function (Blueprint $table) {
+            $table->increments('id_whishlist');
+            $table->foreign('id_book')->references("id_book")->on('book')->onDelete('cascade');
+            $table->integer('number_of_item');
+            $table->integer('total');
+            $table->timestamp('created_at')->nullable();
             
         });
     }
