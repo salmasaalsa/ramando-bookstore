@@ -1,4 +1,4 @@
-@extends('base')
+@extends('layout.app')
 @section('content')
 <div class="bg-light py-3">
       <div class="container">
