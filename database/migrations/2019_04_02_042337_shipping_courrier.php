@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class Publisher extends Migration
+class ShippingCourrier extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,10 @@ class Publisher extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('shipping_courrier', function(Blueprint $table){
+            $table->increments('id_courrier');
+            $table->string('name_courrier');
+        });
     }
 
     /**

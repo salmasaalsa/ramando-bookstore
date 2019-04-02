@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class Complaint extends Migration
+class Author extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,11 @@ class Complaint extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('author', function (Blueprint $table) {
+            $table->increments('id_author');
+            $table->string('author');
+        });
+
     }
 
     /**

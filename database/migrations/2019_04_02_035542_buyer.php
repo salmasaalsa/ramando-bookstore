@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class Buyyer extends Migration
+class Buyer extends Migration
 {
     /**
      * Run the migrations.
@@ -13,17 +13,15 @@ class Buyyer extends Migration
      */
     public function up()
     {
-        Schema::create('buyer', function (Blueprint $table) {
+        Schema::create('buyer', function(Blueprint $table){
             $table->increments('id_buyer');
             $table->string('name');
             $table->string('address');
             $table->string('city');
             $table->string('province');
             $table->integer('postal_code');
-            $table->integer('telp');
-            $table->string('email',50)->unique();
-            $table->timestamp('created_at')->nullable();
-            
+            $table->integer('phone');
+            $table->string('email');
         });
     }
 

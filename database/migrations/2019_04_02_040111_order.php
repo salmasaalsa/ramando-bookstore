@@ -13,14 +13,15 @@ class Order extends Migration
      */
     public function up()
     {
-        Schema::create('order', function (Blueprint $table) {
+        Schema::create('order', function(Blueprint $table){
             $table->increments('id_order');
-            $table->foreign('id_whishlist')->references("id_whishlis")->on('whishlis')->onDelete('cascade');
-            
-            $table->timestamp('date_buy');
-            $table->boolean('status');
-            $table->timestamp('created_at')->nullable();
-            
+            $table->integer('id_wishlist')->unsigned();
+            $table->integer('id_buyer')->unsigned();
+            $table->timestamp('date_order');
+            $table->boolean('status_order');
+
+            $table->foreign('id_wishlist')->references('id_wishlist')->on('wishlist');
+            $table->foreign('id_buyer')->references('id_buyer')->on('buyer');
         });
     }
 

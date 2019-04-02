@@ -13,14 +13,15 @@ class Review extends Migration
      */
     public function up()
     {
-        Schema::create('review', function (Blueprint $table) {
+        Schema::create('review', function(Blueprint $table){
             $table->increments('id_review');
-            $table->foreign('id_buyer')->references("id_buyer")->on('buyer')->onDelete('cascade');
-            $table->foreign('id_book')->references("id_book")->on('book')->onDelete('cascade');
+            $table->integer('id_book')->unsigned();
+            $table->integer('id_buyer')->unsigned();
             $table->text('review');
             $table->integer('rating');
-            $table->timestamp('created_at')->nullable();
-            
+
+            $table->foreign('id_book')->references('id_book')->on('book');
+            $table->foreign('id_buyer')->references('id_buyer')->on('buyer');
         });
     }
 

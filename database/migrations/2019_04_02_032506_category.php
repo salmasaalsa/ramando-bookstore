@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class Pay extends Migration
+class Category extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,12 @@ class Pay extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('category', function (Blueprint $table) {
+            $table->increments('id_category');
+            $table->string('category');
+        
+        });
+
     }
 
     /**
