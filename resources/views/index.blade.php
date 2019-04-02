@@ -1,14 +1,14 @@
 @extends('layout.app')
 @section('content')
 
-<div class="site-blocks-cover" style="background-image: url({{url('images/hero_1.jpg')}});" data-aos="fade">
+<div class="site-blocks-cover" style="background-image: url({{url('images/Bookstores.jpg')}});" data-aos="fade">
       <div class="container">
         <div class="row align-items-start align-items-md-center justify-content-end">
           <div class="col-md-5 text-center text-md-left pt-5 pt-md-0">
-            <h1 class="mb-2">Finding Your Perfect Shoes</h1>
+            <h1 class="mb-2"></h1>
             <div class="intro-text text-center text-md-left">
-              <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at iaculis quam. Integer accumsan tincidunt fringilla. </p>
-              <p>
+              <p class="mb-4"></p>
+              <p><br><br><br>
                 <a href="#" class="btn btn-sm btn-primary">Shop Now</a>
               </p>
             </div>
@@ -57,33 +57,33 @@
           <div class="col-sm-6 col-md-6 col-lg-4 mb-4 mb-lg-0" data-aos="fade" data-aos-delay="">
             <a class="block-2-item" href="#">
               <figure class="image">
-                <img src="{{asset('images/women.jpg')}}" alt="" class="img-fluid">
+                <img src="{{asset('images/Recommended.jpg')}}" alt="" class="img-fluid">
               </figure>
               <div class="text">
                 <span class="text-uppercase">Collections</span>
-                <h3>Women</h3>
+                <h3>Recommended</h3>
               </div>
             </a>
           </div>
           <div class="col-sm-6 col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
             <a class="block-2-item" href="#">
               <figure class="image">
-                <img src="{{asset('images/children.jpg')}}" alt="" class="img-fluid">
+                <img src="{{asset('images/Religion.jpg')}}" alt="" class="img-fluid">
               </figure>
               <div class="text">
                 <span class="text-uppercase">Collections</span>
-                <h3>Children</h3>
+                <h3>Regilion</h3>
               </div>
             </a>
           </div>
           <div class="col-sm-6 col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="200">
             <a class="block-2-item" href="#">
               <figure class="image">
-                <img src="{{asset('images/men.jpg')}}" alt="" class="img-fluid">
+                <img src="{{asset('images/Favorite.jpg')}}" alt="" class="img-fluid">
               </figure>
               <div class="text">
                 <span class="text-uppercase">Collections</span>
-                <h3>Men</h3>
+                <h3>Favorite</h3>
               </div>
             </a>
           </div>
@@ -104,10 +104,10 @@
               <div class="item">
                 <div class="block-4 text-center">
                   <figure class="block-4-image">
-                    <img src="{{asset('images/cloth_1.jpg')}}" alt="Image placeholder" class="img-fluid">
+                    <img src="{{asset('images/Sbmptn.jpg')}}" alt="Image placeholder" class="img-fluid">
                   </figure>
                   <div class="block-4-text p-4">
-                    <h3><a href="#">Tank Top</a></h3>
+                    <h3><a href="#">Education</a></h3>
                     <p class="mb-0">Finding perfect t-shirt</p>
                     <p class="text-primary font-weight-bold">$50</p>
                   </div>
@@ -116,10 +116,10 @@
               <div class="item">
                 <div class="block-4 text-center">
                   <figure class="block-4-image">
-                    <img src="{{asset('images/shoe_1.jpg')}}" alt="Image placeholder" class="img-fluid">
+                    <img src="{{asset('images/tutorialcoding.jpg')}}" alt="Image placeholder" class="img-fluid">
                   </figure>
                   <div class="block-4-text p-4">
-                    <h3><a href="#">Corater</a></h3>
+                    <h3><a href="#">Education Tutorial</a></h3>
                     <p class="mb-0">Finding perfect products</p>
                     <p class="text-primary font-weight-bold">$50</p>
                   </div>
@@ -128,7 +128,7 @@
               <div class="item">
                 <div class="block-4 text-center">
                   <figure class="block-4-image">
-                    <img src="{{asset('images/cloth_2.jpg')}}" alt="Image placeholder" class="img-fluid">
+                    <img src="{{asset('images/bukusosial.jpg')}}" alt="Image placeholder" class="img-fluid">
                   </figure>
                   <div class="block-4-text p-4">
                     <h3><a href="#">Polo Shirt</a></h3>
@@ -176,10 +176,10 @@
         </div>
         <div class="row align-items-center">
           <div class="col-md-12 col-lg-7 mb-5">
-            <a href="#"><img src="{{asset('images/blog_1.jpg')}}" alt="Image placeholder" class="img-fluid rounded"></a>
+            <a href="#"><img src="{{asset('images/bukubulanjuni.jpg')}}" alt="Image placeholder" class="img-fluid rounded"></a>
           </div>
           <div class="col-md-12 col-lg-5 text-center pl-md-5">
-            <h2><a href="#">50% less in all items</a></h2>
+            <h2><a href="#">20% less in all items</a></h2>
             <p class="post-meta mb-4">By <a href="#">Carl Smith</a> <span class="block-8-sep">&bullet;</span> September 3, 2018</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam iste dolor accusantium facere corporis ipsum animi deleniti fugiat. Ex, veniam?</p>
             <p><a href="#" class="btn btn-primary btn-sm">Shop Now</a></p>
