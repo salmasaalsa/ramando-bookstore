@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('layout.app');
+    return view('index');
 });
 Route::get('/index', function () {
     return view('index');
@@ -42,3 +42,7 @@ Route::resource('merek','MerekController');
 
     
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
