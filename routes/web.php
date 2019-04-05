@@ -29,15 +29,7 @@ Route::get('/contact', function () {
 Route::get('/cart', function () {
     return view('cart');
 });
-Route::get('/index', function () {
-    return view('index');
-});
-Route::get('/index', function () {
-    return view('index');
-});
-Route::resource('barang','BarangController');
 
-Route::resource('merek','MerekController');
 
 
     
